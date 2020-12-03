@@ -2,6 +2,7 @@
 
 namespace Ombimo\LarawebUser;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class LarawebUserServiceProvider extends ServiceProvider
@@ -23,6 +24,8 @@ class LarawebUserServiceProvider extends ServiceProvider
      */
     public function boot(\Illuminate\Routing\Router $router)
     {
+        Route::pattern('locale', '[a-zA-Z]{2}');
+
         //route
         $this->loadRoutesFrom(__DIR__.'/routes.php');
 

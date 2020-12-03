@@ -7,9 +7,9 @@ use Ombimo\LarawebUser\Controllers\NewPasswordController;
 use Ombimo\LarawebUser\Controllers\RegisterController;
 
 if (config('laraweb.multilang')) {
-    $prefix = '{locale}/' . config('laraweb-member.prefix');
+    $prefix = '{locale}/' . config('laraweb-user.prefix');
 } else {
-    $prefix = config('laraweb-member.prefix');
+    $prefix = config('laraweb-user.prefix');
 }
 
 Route::group([
