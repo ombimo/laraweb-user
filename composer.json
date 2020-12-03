@@ -1,0 +1,29 @@
+{
+    "name": "ombimo/laraweb-user",
+    "description": "Laraweb User",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bimo Aji Pamungkas",
+            "email": "bimo.aji.92@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/socialite": "^5.1"
+    },
+    "require-dev": {
+        "xvladqt/faker-lorem-flickr" : "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ombimo\\LarawebUser\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ombimo\\LarawebUser\\LarawebUserServiceProvider"
+            ]
+        }
+    }
+}
